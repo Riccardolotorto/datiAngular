@@ -1,3 +1,6 @@
 <ul>
-    <li *ngFor="let name of names">Hello {{ name }}</li>
+    <li *ngFor="let name of names">
+        <app-user-item [name]="name">  <!--[name] indica l'input che abbiamo inserito nel componente app-user-item, name indica la variabile locale creata nel ciclo for-->
+        </app-user-item>
+    </li>
 </ul>
